@@ -1,4 +1,4 @@
-Final::Application.configure do
+SampleApp::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
@@ -19,6 +19,11 @@ Final::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
+
+  # Force all access to the app over SSL, use Strict-Transport-Security, 
+  # and use secure cookies.
+  config.force_ssl = true
+
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
